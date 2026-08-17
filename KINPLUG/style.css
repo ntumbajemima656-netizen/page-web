@@ -1,0 +1,288 @@
+/* ==========================================================================
+   STYLE GLOBAL & PALETTE STREETWEAR
+   ========================================================================== */
+:root {
+    --bg-main: #0d0d0d;
+    --bg-card: #181818;
+    --bg-card-alt: #222222;
+    --accent: #f59e0b;       /* Doré / Ambre Streetwear */
+    --accent-hover: #d97706;
+    --text-white: #ffffff;
+    --text-muted: #a3a3a3;
+    --border-color: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-white);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent);
+}
+
+/* Header */
+header {
+    background-color: rgba(13, 13, 13, 0.95);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.brand-name {
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: var(--text-white);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+.btn-nav {
+    background-color: var(--accent);
+    color: #000 !important;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(180deg, rgba(13,13,13,0.7) 0%, rgba(13,13,13,1) 100%);
+    padding: 5rem 1.5rem 3rem 1.5rem;
+    text-align: center;
+}
+
+.hero-logo {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.slogan {
+    font-style: italic;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #25d366;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.9rem 2rem;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    background-color: #1ebd56;
+}
+
+/* Info Cards */
+.card {
+    background-color: var(--bg-card);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 2rem;
+}
+
+.info-box h2 {
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    border-left: 4px solid var(--accent);
+}
+
+/* Piliers Grid */
+.bg-alt {
+    background-color: #121212;
+}
+
+.grid-piliers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.pilier-card {
+    background-color: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    transition: 0.3s;
+}
+
+.pilier-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+}
+
+.pilier-card i {
+    font-size: 2rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.pilier-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.pilier-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Services Grid */
+.grid-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.service-card {
+    background-color: var(--bg-card-alt);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.service-card i {
+    font-size: 1.8rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: #050505;
+    border-top: 1px solid var(--border-color);
+    padding-top: 3rem;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.contact-item {
+    color: var(--text-white);
+    text-decoration: none;
+    font-size: 1.1rem;
+    background-color: var(--bg-card);
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    transition: 0.3s;
+}
+
+.contact-item:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.contact-item i {
+    margin-right: 8px;
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    border-top: 1px solid #1a1a1a;
+    padding-top: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    nav a {
+        margin: 0 0.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+}
